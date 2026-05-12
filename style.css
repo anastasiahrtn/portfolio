@@ -304,6 +304,12 @@ main {
 
 }
 
+@media (max-width: 768px) {
+    .banners {
+        width: 95%;
+    }
+}
+
 .banner-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;

@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffefd;
+
+    height: auto;
 }
 
 /* header */
@@ -10,7 +12,7 @@ header {
     background-color: #000;
     color: #fffefd;
 
-    padding: 20px 40px; /* top/bottom 20px, left/right 40px */
+    padding: 20px 40px;
     position: sticky;
     top: 0;
     display: flex;
@@ -109,10 +111,20 @@ main {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .useless_quote {
+        margin: 100px auto 0 auto;
+        width: 95%;
+        text-align: center;
+        font-size: 27px;
+        color: #333;
+}
+
+
 
 
 .content-home{
-    height: 300vw;
+    min-height: 100vh;
 }
 
 
@@ -136,4 +148,36 @@ main {
     line-height: 1.6;
     color: #333;
 
+}
+
+@media (max-width: 768px) {
+    .content-home{
+    min-height: 100vh;
+}
+
+
+/* contact section */
+
+.contact-intro {
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+.contact-details {
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+
+}
 }

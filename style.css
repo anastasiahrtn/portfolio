@@ -306,7 +306,7 @@ main {
 
 @media (max-width: 768px) {
     .banners {
-        width: 95%;
+        max-width: 95%;
     }
 }
 

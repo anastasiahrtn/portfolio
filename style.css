@@ -152,6 +152,9 @@ header {
     color: #fffefd;
 }
 
+.filleer {
+    height: 50px;
+}
 
 
 main {
@@ -286,4 +289,70 @@ main {
     color: #333;
 
 }
+}
+
+
+/* home banners */
+.banners {
+    position: relative;
+
+    width: 100vw;
+    max-width: 1200px;
+
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.banner-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-slide {
+    min-width: 100%;
+    display: block;
+}
+
+.banner-slide img {
+    width: 100%;
+    display: block;
+
+}
+
+/* buttons */
+.banner-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: rgba(0, 0, 0, 0.0);
+    color: rgba(0, 0, 0, 0.0);
+
+    border: none;
+    padding: 12px 25px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    height: 100%;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.2s;
+}
+
+.banner-btn:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fffefd;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
 }

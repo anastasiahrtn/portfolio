@@ -53,10 +53,44 @@
 
     </header>
     
-
     <div class="content-home">
-        content here
+        <div class="banners">
+
+            <div class="banner-slider" id="banner-slider">
+
+                <a href="" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-01.png" alt="Banner 1">
+                </a>
+
+                <a href="" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-02.png" alt="Banner 2">
+                </a>
+
+                <a href="profile.html" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-03.png" alt="Banner 3">
+                </a>
+
+                <a href="updates.html" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-04.png" alt="Banner 4">
+                </a>
+
+                <a href="projects.html" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-05.png" alt="Banner 5">
+                </a>
+
+                <a href="contact.html" class="banner-slide">
+                    <img src="00.assets/02.banners/banners-06.png" alt="Banner 6">
+                </a>
+
+            </div>
+
+            <button class="banner-btn prev">&#10094;</button>
+            <button class="banner-btn next">&#10095;</button>
+
+        </div>
+
     </div>
+
 
 
     <footer class="footer">
@@ -158,6 +192,47 @@
                 .classList.toggle("active");
         }
 
+
+
+        // banner slider
+        const slider = document.getElementById("banner-slider");
+
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+
+        const totalSlides = document.querySelectorAll(".banner-slide").length;
+
+        let currentSlide = 0;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentSlide++;
+
+            if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            }
+
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide--;
+
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            }
+
+            updateSlider();
+        }
+
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        /* auto slide every 5 sec */
+        setInterval(nextSlide, 5000);
     </script>
 
 </body>

@@ -15,23 +15,31 @@
 </head>
 <body>
 
-    
-     <header>
-        <!-- home  -->
+    <header>
+
         <a href="home.html">
-            <img src="00.assets\00.icon_logo\white_logo.png" alt="logo" class="header_logo" >
+            <img src="00.assets/00.icon_logo/white_logo.png"
+                alt="logo"
+                class="header_logo">
         </a>
 
-        <div class="nav-container">
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
             <a href="profile.html" class="nav-buttons">Profile</a>
             <a href="updates.html" class="nav-buttons">Updates</a>
             <a href="projects.html" class="nav-buttons">Projects</a>
             <a href="contact.html" class="nav-buttons">Contact</a>
         </div>
+
     </header>
     
 
-    <div class="content-home">
+    <div class="content-contact">
         
         <div class="contact-intro">
             For inquiries, collaborations, or just to say hello, feel free to reach out! You can contact me through the following channels:
@@ -65,6 +73,15 @@
     </footer>
 
 
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+    </script>
 
 </body>
 </html>

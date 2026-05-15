@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Title -->
+    <title>AnastasiaHrtn | Home </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="00.assets\00.icon_logo\site_icon.png">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="home.html">
+            <img src="00.assets/00.icon_logo/white_logo.png"
+                alt="logo"
+                class="header_logo">
+        </a>
+
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
+            <a href="profile.html" class="nav-buttons">Profile</a>
+            <a href="updates.html" class="nav-buttons">Updates</a>
+            <a href="projects.html" class="nav-buttons">Projects</a>
+            <a href="contact.html" class="nav-buttons">Contact</a>
+        </div>
+
+    </header>
+    
+
+    <div class="content-projects">
+        content here
+    </div>
+
+
+    <footer class="footer">
+        © 2026 Anastasia Putri Hartanti. All Rights Reserved.
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
+

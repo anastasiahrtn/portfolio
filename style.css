@@ -137,7 +137,7 @@ header {
 
     .nav-buttons {
         margin-right: 10px;
-        font-size: 25px;
+        font-size: 22px;
 
         text-align: right;
     }
@@ -362,3 +362,10 @@ main {
 .next {
     right: 15px;
 }
+
+
+/* profile */
+.content-profile {
+    min-height: 80vh;
+}
+

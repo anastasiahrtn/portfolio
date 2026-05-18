@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Title -->
+    <title>AnastasiaHrtn | Home </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="..\00.assets\00.icon_logo\site_icon.png">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="..\style.css">
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="..\home.html">
+            <img src="..\00.assets\00.icon_logo\white_logo.png"
+                alt="logo"
+                class="header_logo">
+        </a>
+
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
+            <a href="..\profile.html" class="nav-buttons">Profile</a>
+            <a href="..\updates.html" class="nav-buttons">Updates</a>
+            <a href="..\projects.html" class="nav-buttons">Projects</a>
+            <a href="..\contact.html" class="nav-buttons">Contact</a>
+        </div>
+
+    </header>
+    
+
+    <div class="content-updates">
+        <div class="invisible-divider"> ‎ ‎  </div>
+        
+        <h1 class="project-page-title">
+            This is the project title
+        </h1>
+
+        <p class="project-page-date">
+            January 2026
+        </p>
+
+
+        <img src="02-beeware\img-01.png" alt="BEEware app homepage" class="project-page-image">
+
+        <p class="project-page-paragraph">
+            This is the project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+
+        <p class="project-page-paragraph">
+            Project video demo here
+        </p>
+
+        <div class="project-page-video">
+            <iframe
+                src="https://www.youtube.com/embed/bMMtXFkej6o"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="project-page-paragraph">
+            Project links below:
+        </p>
+
+        <p class="project-page-paragraph">
+            <a href="https://anastasiahrtn.github.io/SoftEng_Group4_BEEware/user_01_landing.html" target="_blank" class="project-page-link">
+                Project link
+            </a>
+        </p>
+
+
+        <div class="invisible-divider"> ‎ ‎  </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        © 2026 Anastasia Putri Hartanti. All Rights Reserved.
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>

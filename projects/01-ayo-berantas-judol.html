@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Title -->
+    <title>AnastasiaHrtn | Home </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="..\00.assets\00.icon_logo\site_icon.png">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="..\style.css">
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="..\home.html">
+            <img src="..\00.assets\00.icon_logo\white_logo.png"
+                alt="logo"
+                class="header_logo">
+        </a>
+
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
+            <a href="..\profile.html" class="nav-buttons">Profile</a>
+            <a href="..\updates.html" class="nav-buttons">Updates</a>
+            <a href="..\projects.html" class="nav-buttons">Projects</a>
+            <a href="..\contact.html" class="nav-buttons">Contact</a>
+        </div>
+
+    </header>
+    
+
+    <div class="content-updates">
+        <div class="invisible-divider"> ‎ ‎  </div>
+        
+        <h1 class="project-page-title">
+            Ayo Berantas Judol: A Text-based Indonesian Gambling Site Detector Tool
+        </h1>
+
+        <p class="project-page-date">
+            May 2026
+        </p>
+
+
+        <img src="01-ayo-berantas-judol\header.png" alt="Ayo Berantas Judol extension logo" class="project-page-image">
+
+        <p class="project-page-paragraph">
+            <b> When 200,000 children in Indonesia have already been exposed to online gambling, 
+            it's no longer a cybercrime problem — it is a national crisis. </b> Indonesia's Minister 
+            of Communication and Digital Affairs had recently reported that around 200,000 
+            children had already been exposed to online gambling 
+            (<a href="https://www.tempo.co/hukum/menkomdigi-200-ribu-anak-terpapar-judi-online-2135894" target="_blank">tempo.co</a>). 
+            Shockingly, around 80,000 of 
+            them were below the age of 10. This alarming statistic highlights the urgent need 
+            for effective measures to combat online gambling and protect vulnerable children 
+            from its harmful effects. 
+        </p>
+
+        <p class="project-page-paragraph">
+            Ayo Berantas Judol is a web extension that I developed as a continuation of 
+            my work on the Indonesian illegal gambling site detector project. The extension 
+            is designed to help identify and block access to illegal gambling sites 
+            in Indonesia, within less than one second.
+        </p>
+
+        <p class="project-page-paragraph">
+            Ayo Berantas Judol is powered by a text-based machine learning classifier
+            model that I trained using real-world Indonesian gambling site data. The model 
+            is designed to analyze the text content of websites and determine whether they 
+            are likely to be illegal gambling sites. 
+        </p>
+
+        <img src="01-ayo-berantas-judol\flowchart.png" alt="Ayo Berantas Judol extension flowchart" class="project-page-image">
+
+
+        <p class="project-page-paragraph">
+            The flowchart above illustrates how the Ayo Berantas Judol web extension works. 
+            When a user visits a website, the extension first checks if the domain belongs to 
+            the whitelist of safe sites. If the domain is not on the whitelist, the extension 
+            then checks the text content of the website by putting it through the machine 
+            learning model. 
+        </p>
+
+
+        <p class="project-page-paragraph">
+            The machine learning model used in this extension is the Logistic 
+            Regression model. To turn textual content into numerical data that the model can 
+            process, I used the Bag-of-Words vectorizer, which converts the text into a matrix 
+            of word counts. The logistic regression model then analyzes this matrix to determine 
+            the likelihood that the website is an Indonesian illegal gambling site. If the model 
+            predicts that the website is likely to be illegal, the extension will automatically 
+            redirect the user to a warning page, like shown below.
+        </p>
+
+        <img src="01-ayo-berantas-judol\landing-page.png" alt="Ayo Berantas Judol landing page" class="project-page-image">
+
+        <p class="project-page-paragraph">
+            The landing page of the Ayo Berantas Judol extension serves as a warning to users 
+            that they have attempted to access an illegal gambling site. The page also provides 
+            resources for users to seek help if they or someone they know is struggling with 
+            gambling addiction. By redirecting users to this landing page, the Ayo Berantas 
+            Judol extension aims to raise awareness about the risks of online gambling and 
+            encourage responsible internet use.
+        </p>
+
+        <p class="project-page-paragraph">
+            Ayo Berantas Judol is a powerful tool in the fight against online gambling in Indonesia, 
+            providing users with a quick and effective way to identify and block access to illegal 
+            gambling sites. By leveraging machine learning technology, this extension can help protect 
+            vulnerable children and adults from the harmful effects of online gambling.
+        </p>
+
+        <p class="project-page-paragraph">
+            To get a feel for this extension, you may click the link below to access the GitHub repository of the Ayo Berantas Judol web extension prototype: 
+
+            <a href="https://github.com/anastasiahrtn/berantas-judol" target="_blank" class="project-page-link">
+                Ayo Berantas Judol GitHub Repository
+            </a>
+        </p>
+
+
+        <div class="invisible-divider"> ‎ ‎  </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        © 2026 Anastasia Putri Hartanti. All Rights Reserved.
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>

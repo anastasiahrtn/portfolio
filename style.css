@@ -632,5 +632,24 @@ main {
         max-width: 1000px;
         text-align: left;
     }
+
+    .project-page-paragraph {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+
+        margin: 35px auto;
+
+        width: 90%;
+        max-width: 1000px;
+
+        text-align: left;
+
+        font-family: "Roboto Mono", monospace;
+        font-weight: 100;
+
+        text-align: justify;
+
+    }
     
 }

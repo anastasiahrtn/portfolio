@@ -237,6 +237,11 @@ main {
 
 .content-contact {
     min-height: 80vh;
+
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-intro {
@@ -671,7 +676,7 @@ main {
 /* profile */
 
 .content-profile {
-    min-height: 100vh;
+    height: 90vh;
 }
 
 .profile-container {
@@ -685,6 +690,8 @@ main {
 
     margin-left: auto;
     margin-right: auto;
+
+    
 }
 
 .profile-personal {
@@ -692,6 +699,9 @@ main {
     position: sticky;
     top: 0;
 
+    height: 80vh;
+
+    overflow: auto;
 }
 
 .profile-picture {
@@ -706,6 +716,37 @@ main {
 
     font-weight: 200;
 }
+
+.profile-stats {
+    font-size: 20px;
+    text-align: left;
+
+    font-weight: 200;
+}
+
+.profile-stats-details {
+    font-size: 19px;
+    text-align: left;
+
+    font-weight: 200;
+}
+
+.profile-buttons {
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profile-button{
+    width: 50px;
+    padding: 10px 10px;
+}
+
+
 
 .profile-details {
     font-size: 15px;
@@ -755,7 +796,7 @@ main {
 .vl {
     width: 1px;
     background-color: #333;
-    min-height: 75vh;
+    height: 80vh;
 
     position: sticky;
     top: 0;
@@ -763,7 +804,7 @@ main {
 
 .profile-content {
     flex: 1;
-    height: 100vh;
+    height: 80vh;
     overflow-y: auto;
 }
 

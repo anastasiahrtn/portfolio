@@ -573,7 +573,7 @@ main {
     display: block;
 
     width: 90%;
-    max-width: 900px;
+    max-width: 700px;
 
     margin: 30px auto;
 
@@ -852,4 +852,156 @@ main {
         background-color: black;
     }
 
+}
+
+
+/* updates */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.article-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.article-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor; /* or your accent color */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+}
+
+.article-card:hover::after {
+    transform: scaleX(1);
+}
+
+.article-card img {
+    width: 180px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article-content h3 {
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+.article-content p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.article-divider {
+    border: none;
+    height: 1px;
+    background: #020202;
+    margin: 0;
+}
+
+
+.article-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+.article-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+    }
+
+    .article-card img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 3px;
+    margin-bottom: 10px;
+}
+
+.article-tags div {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+
+/* Colors */
+.tag-updates {
+    background: #f5ede0;
+    color: #4A342A;
+}
+
+.tag-experience {
+    background: #D7C9B8;
+    color: #4A342A;
+}
+
+.tag-projects {
+    background: #B2967D;
+    color: white;
+}
+
+.tag-review {
+    background: #7D5A44;
+    color: white;
+}
+
+.tag-ideas {
+    background: #4A342A;
+    color: white;
+}
+
+.tag-offtopic {
+    background: #1e1101;
+    color: white;
+}
+
+.article-title {
+    font-size: 18px;
+    top: 10px;
+    color: #333;
 }

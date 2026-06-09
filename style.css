@@ -556,6 +556,19 @@ main {
 
 }
 
+.project-page-section-title {
+    font-size: 30px;
+    color: #333;
+
+    margin: 30px auto;
+
+    width: 90%;
+    max-width: 1000px;
+
+    text-align: left;
+
+}
+
 .project-page-date {
     font-size: 25px;
     color: #333;

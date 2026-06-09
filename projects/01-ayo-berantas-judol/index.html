@@ -55,24 +55,32 @@
 
         <img src="header.png" alt="Ayo Berantas Judol extension logo" class="project-page-image">
 
-        <p class="project-page-paragraph">
-            <b> When 200,000 children in Indonesia have already been exposed to online gambling, 
-            it's no longer a cybercrime problem — it is a national crisis. </b> Indonesia's Minister 
-            of Communication and Digital Affairs had recently reported that around 200,000 
-            children had already been exposed to online gambling 
-            (<a href="https://www.tempo.co/hukum/menkomdigi-200-ribu-anak-terpapar-judi-online-2135894" target="_blank">tempo.co</a>). 
-            Shockingly, around 80,000 of 
-            them were below the age of 10. This alarming statistic highlights the urgent need 
-            for effective measures to combat online gambling and protect vulnerable children 
-            from its harmful effects. 
-        </p>
+        <h2 class="project-page-section-title">
+            Problem :
+        </h2>
 
         <p class="project-page-paragraph">
-            Ayo Berantas Judol is a web extension that I developed as a continuation of 
-            my work on the Indonesian illegal gambling site detector article. The extension 
-            is designed to help identify and block access to illegal gambling sites 
-            in Indonesia, within less than one second.
+            Indonesia's Minister of Communication and Digital Affairs had recently reported that 
+            around 200,000 children had already been exposed to online gambling. Pusat Pelaporan 
+            Analisis Transaksi Keuangan (PPATK) have also reported that the total transaction value 
+            of online gambling in Indonesia reached a shocking amount of Rp 327 trillion by the end 
+            of 2023.
+            
         </p>
+
+        <h2 class="project-page-section-title">
+            Solution :
+        </h2>
+
+        <p class="project-page-paragraph">
+            Ayo Berantas Judol is a <b>web extension</b> that I developed to help <b>
+            identify and block access to illegal gambling sites</b> in Indonesia, within 
+            less than one second.
+        </p>
+
+        <h2 class="project-page-section-title">
+            How it works :
+        </h2>
 
         <p class="project-page-paragraph">
             Ayo Berantas Judol is powered by a text-based machine learning classifier
@@ -80,52 +88,49 @@
             is designed to analyze the text content of websites and determine whether they 
             are likely to be illegal gambling sites. 
         </p>
-
+        
         <img src="flowchart.png" alt="Ayo Berantas Judol extension flowchart" class="project-page-image">
 
-
         <p class="project-page-paragraph">
-            The flowchart above illustrates how the Ayo Berantas Judol web extension works. 
-            When a user visits a website, the extension first checks if the domain belongs to 
-            the whitelist of safe sites. If the domain is not on the whitelist, the extension 
+            The extension works by combining Bag of Words vectorization and a Logistic 
+            Regression model to analyze the text content of websites. When a user visits 
+            a website, the extension first checks if the domain belongs to the whitelist 
+            of safe sites. If the domain is not on the whitelist, the extension 
             then checks the text content of the website by putting it through the machine 
-            learning model. 
-        </p>
-
-
-        <p class="project-page-paragraph">
-            The machine learning model used in this extension is the Logistic 
-            Regression model. To turn textual content into numerical data that the model can 
-            process, I used the Bag-of-Words vectorizer, which converts the text into a matrix 
-            of word counts. The logistic regression model then analyzes this matrix to determine 
-            the likelihood that the website is an Indonesian illegal gambling site. If the model 
-            predicts that the website is likely to be illegal, the extension will automatically 
-            redirect the user to a warning page, like shown below.
+            learning model. If the model predicts that the website is likely to be an illegal 
+            gambling site, the extension will automatically redirect the user to a warning page.
         </p>
 
         <img src="landing-page.png" alt="Ayo Berantas Judol landing page" class="project-page-image">
 
-        <p class="project-page-paragraph">
-            The landing page of the Ayo Berantas Judol extension serves as a warning to users 
-            that they have attempted to access an illegal gambling site. The page also provides 
-            resources for users to seek help if they or someone they know is struggling with 
-            gambling addiction. By redirecting users to this landing page, the Ayo Berantas 
-            Judol extension aims to raise awareness about the risks of online gambling and 
-            encourage responsible internet use.
-        </p>
+        <h2 class="project-page-section-title">
+            Dataset :
+        </h2>
 
         <p class="project-page-paragraph">
-            Ayo Berantas Judol is a powerful tool in the fight against online gambling in Indonesia, 
-            providing users with a quick and effective way to identify and block access to illegal 
-            gambling sites. By leveraging machine learning technology, this extension can help protect 
-            vulnerable children and adults from the harmful effects of online gambling.
+            The dataset used to train the machine learning model in this extension consists of 
+            real-world Indonesian gambling site data. I collected a large number of websites that 
+            are known to be illegal gambling sites in Indonesia, as well as a set of safe websites 
+            that are not involved in any illegal activities. The dataset was then preprocessed and 
+            used to train the logistic regression model to accurately classify websites as either 
+            illegal gambling sites or safe sites.
         </p>
+
+        
 
         <p class="project-page-paragraph">
             To get a feel for this fully functioning extension, you may click the link below to access the GitHub repository of the Ayo Berantas Judol web extension: 
 
             <a href="https://github.com/anastasiahrtn/berantas-judol" target="_blank" class="project-page-link">
                 Ayo Berantas Judol GitHub Repository
+            </a>
+        </p>
+
+        <p class="project-page-paragraph">
+            To read more about this project, please click the link below for the full article:
+
+            <a href="..\..\updates\01-ayo-berantas-judol\" target="_blank" class="project-page-link">
+                Ayo Berantas Judol Article
             </a>
         </p>
 

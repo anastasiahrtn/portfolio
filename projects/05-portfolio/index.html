@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Title -->
+    <title>Projects | AnastasiaHrtn</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="..\..\00.assets\00.icon_logo\site_icon.png">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="..\..\style.css">
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="../../">
+            <img src="..\..\00.assets\00.icon_logo\white_logo.png"
+                alt="logo"
+                class="header_logo">
+        </a>
+
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
+            <a href="..\..\profile\" class="nav-buttons">Profile</a>
+            <a href="..\..\updates\" class="nav-buttons">Updates</a>
+            <a href="..\..\projects\" class="nav-buttons">Projects</a>
+            <a href="..\..\contact\" class="nav-buttons">Contact</a>
+        </div>
+
+    </header>
+    
+
+    <div class="content-updates">
+        <div class="invisible-divider"> ‎ ‎  </div>
+        
+        <h1 class="project-page-title">
+            My Portfolio Website (this site)
+        </h1>
+
+        <p class="project-page-date">
+            May 2026
+        </p>
+
+
+        <img src="header.png" alt="My Portfolio Website" class="project-page-image">
+
+        <h2 class="project-page-section-title">
+            Background :
+        </h2>
+
+        <p class="project-page-paragraph">
+            I created this portfolio in between my free time during my final
+            project semester. I wanted to have a personal website to showcase my
+            projects, as well as a platform to share my thoughts and updates about 
+            my work, and to express myself creatively.
+        </p>
+
+        <p class="project-page-paragraph">
+            This website was created with a lot of personal touches, including the 
+            black cat icon as the logo and site opening message. I believe that a 
+            portfolio website should not only be a showcase of one's work, but also 
+            a reflection of one's personality and style. 
+        </p>
+
+      
+        <p class="project-page-paragraph">
+            This website was mainly created out of my desparation to finally land a
+            job in the tech industry. So pls hire me if you read this :'D
+        </p>
+
+
+        <div class="invisible-divider"> ‎ ‎  </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        © 2026 Anastasia Putri Hartanti. All Rights Reserved.
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+        const BASE_URL = "/portfolio";
+    </script>
+    
+</body>
+</html>

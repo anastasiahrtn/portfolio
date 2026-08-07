@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Title -->
+    <title>Projects | AnastasiaHrtn</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="..\..\00.assets\00.icon_logo\site_icon.png">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="..\..\style.css">
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="../../">
+            <img src="..\..\00.assets\00.icon_logo\white_logo.png"
+                alt="logo"
+                class="header_logo">
+        </a>
+
+        <!-- hamburger -->
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <!-- nav -->
+        <div class="nav-buttons-container" id="mobileMenu">
+            <a href="..\..\profile\" class="nav-buttons">Profile</a>
+            <a href="..\..\updates\" class="nav-buttons">Updates</a>
+            <a href="..\..\projects\" class="nav-buttons">Projects</a>
+            <a href="..\..\contact\" class="nav-buttons">Contact</a>
+        </div>
+
+    </header>
+    
+
+    <div class="content-updates">
+        <div class="invisible-divider"> ‎ ‎  </div>
+        
+        <h1 class="project-page-title">
+            Long Term Sales Forecasting using Multiple Models
+        </h1>
+
+        <p class="project-page-date">
+            July 2026
+        </p>
+
+
+        <img src="cover.png" alt="Long Term Sales Forecasting using Multiple Models" class="project-page-image">
+
+        <h2 class="project-page-section-title">
+            Background :
+        </h2>
+
+        <p class="project-page-paragraph">
+            This project was completed as an exploration of various 
+            machine learning models for long-term sales forecasting. 
+            The objective was to compare the performance of different 
+            models and identify the most effective approach for 
+            predicting future sales trends.
+        </p>
+
+        <p class="project-page-paragraph">
+            This was my first time exploring the field of sales forecasting, 
+            and I was particularly interested in understanding how 
+            different models could be applied to real-world data. The project 
+            involved preprocessing historical data, and then applying various 
+            machine learning algorithms to forecast future sales.
+
+        </p>
+
+        
+        <h2 class="project-page-section-title">
+            Problems :
+        </h2>
+
+        <p class="project-page-paragraph">
+            During this project, one of the main challenges was implementing 
+            the SARIMA model with annual seasonality. Because annual seasonality 
+            requires a long historical time series and significantly greater 
+            computational resources for parameter tuning, training the model 
+            became impractical with the available hardware. As a result, I 
+            explored alternative seasonal periods and ultimately configured 
+            the SARIMA model to capture weekly seasonality instead.
+        </p>
+
+        <p class="project-page-paragraph">
+            Although this approach reduced the computational burden, it was 
+            unable to fully capture the annual seasonal patterns present in 
+            the data. Consequently, the model produced lower forecasting 
+            accuracy compared with the other evaluated models, particularly 
+            Prophet, which was able to model the long-term seasonal trend more 
+            effectively.
+        </p>
+
+        <h2 class="project-page-section-title">
+            Results :
+        </h2>
+
+        <img src="viz.png" alt="Forecast Results vs Real Data" class="project-page-image">
+
+        <p class="project-page-paragraph">
+            Try the interractive version of this visualization here:
+            <a href="https://colab.research.google.com/drive/182v7oLOXunBXEjmPcN_kNo0OuUXTRRhs?usp=sharing" target="_blank" class="project-page-link">
+                Google Colab
+            </a>
+        </p>
+
+        <table class="project-page-table">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ddd; padding: 8px;">Model</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Mean Squared Error (MSE)</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Mean Absolute Error (MAE)</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Mean Absolute Percentage Error (MAPE)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><strong>Prophet</strong></td>
+                <td style="border: 1px solid #ddd; padding: 8px;">177.02</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">10.17</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">44.76%*</td>
+                </tr>
+                <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">SARIMA</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">1137.00</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">30.70</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">162.90%*</td>
+                </tr>
+                <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">XGBoost</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">216.51</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">11.27</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">46.26%</td>
+                </tr>
+                <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">ARIMA</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">559.25</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">21.12</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">111.70%*</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <p class="project-page-paragraph">
+                *MAPE was calculated by first excluding the zero values in the 
+                actual sales to avoid division by zero errors.
+            </p>            
+
+        
+
+        <p class="project-page-paragraph">
+            Based on both the evaluation metrics and the visualization, Prophet 
+            is the preferred forecasting model. It achieved the lowest prediction 
+            errors (MSE, MAE, and MAPE) while effectively capturing the overall 
+            trend and seasonal patterns without producing excessive fluctuations. 
+            In addition, Prophet requires less computational effort than SARIMA, 
+            making it the best balance between accuracy, stability, and efficiency 
+            for this forecasting task.
+        </p>
+
+
+        <p class="project-page-paragraph">
+            See my codes and workings here:
+            <a href="https://colab.research.google.com/drive/1bUm2YemayVDbjvGy9YyUuKJJxR23AR6N?usp=sharing" target="_blank" class="project-page-link">
+                Google Colab
+            </a>
+        </p>
+
+        <div class="invisible-divider"> ‎ ‎  </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        © 2026 Anastasia Putri Hartanti. All Rights Reserved.
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document
+                .getElementById("mobileMenu")
+                .classList.toggle("active");
+        }
+        const BASE_URL = "/portfolio";
+    </script>
+    
+</body>
+</html>

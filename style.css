@@ -1050,3 +1050,21 @@ main {
     top: 10px;
     color: #333;
 }
+
+.project-page-table {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+
+    margin: 35px auto;
+
+    width: 90%;
+    max-width: 1000px;
+
+    text-align: left;
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: 100;
+
+    text-align: left;
+}
